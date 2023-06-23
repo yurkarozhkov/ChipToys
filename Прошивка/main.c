@@ -18,7 +18,7 @@ int main(void)
 	
 	while(1)
 	{
-		asm ("sleep");
+		asm ("sleep"); // Команда - спать
 	}
 }
 ISR(INT0_vect)
