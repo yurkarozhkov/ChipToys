@@ -11,9 +11,9 @@ int main(void)
 	DDRB= 0b00101101;
 	PORTB=0b00011010;
 	
-	MCUCR=0b00110000;             // Sleep enable, mode: power-down
-	GIMSK=0b01100000;             // Pin Change Interrupt Enable
-	PCMSK=0b00010000;             // PCINT4 & PCINT3 set
+	MCUCR=0b00110000;             // Режим сна включен, режим = полный сон
+	GIMSK=0b01100000;             // Активируем прерывание по входу
+	PCMSK=0b00010000;             // PCINT4 & PCINT3
 	asm("sei");
 	
 	while(1)
